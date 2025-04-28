@@ -4,13 +4,13 @@ import ContactForm from "./components/contactForm";
 import ProjectCard from "./components/projectCard";
 
 import { VscSymbolColor } from "react-icons/vsc";
-import { VscSymbolEvent } from "react-icons/vsc";
-import { VscSymbolProperty } from "react-icons/vsc";
+//import { VscSymbolEvent } from "react-icons/vsc";
+//import { VscSymbolProperty } from "react-icons/vsc";
 import { VscTools } from "react-icons/vsc";
 import { VscVerifiedFilled } from "react-icons/vsc";
-import { VscVerified } from "react-icons/vsc";
+//import { VscVerified } from "react-icons/vsc";
 import { BsChatSquareDots } from "react-icons/bs";
-import { BsCheck2Circle } from "react-icons/bs";
+//import { BsCheck2Circle } from "react-icons/bs";
 import { BsFileEarmarkText } from "react-icons/bs";
 
 const frontendSkills = [

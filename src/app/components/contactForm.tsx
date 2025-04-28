@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
@@ -11,7 +11,7 @@ export default function ContactForm() {
   });
   const [status, setStatus] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
       await emailjs.send(

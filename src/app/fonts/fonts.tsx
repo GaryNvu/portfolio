@@ -1,5 +1,5 @@
 import { Poppins, Roboto_Mono, Geist, Geist_Mono, Montserrat } from 'next/font/google'
-import localFont from 'next/font/local'
+//import localFont from 'next/font/local'
 
 export const poppins = Poppins({
   subsets: ['latin'],
