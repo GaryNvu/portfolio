@@ -95,7 +95,7 @@ export default function Home() {
       <main className="">
         <section id="home" className="flex flex-row content-center items-center justify-between h-[675px] w-[70%] mx-auto">
           <div className="flex flex-col items-start justify-center">
-            <h3 className="text-2xl font-bold">Hi, I'm</h3>
+            <h3 className="text-2xl font-bold">Hi, I&apos;m</h3>
             <h1 className="text-6xl font-bold text-primary-light">Gary Neveu</h1>
             <h2 className="mt-4 text-4xl">Fullstack Developer</h2>
             <div className="flex flex-row mt-4 gap-4">
