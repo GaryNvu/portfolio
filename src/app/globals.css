@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #150120;
+  --dark-purple: #220233;
+  --primary: #892CDC;
+  --primary-light: #BC6FF1;
+  --text: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-dark-purple: var(--dark-purple);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+h1 {
+  margin-block-start: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #150120;
+    --dark-purple: #220233;
+    --primary: #892CDC;
+    --primary-light: #BC6FF1;
+    --text: #FFFFFF;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 1.15rem;
+  padding: 0.5rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.button-primary-light {
+  background-color: var(--primary-light);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary-light:hover {
+  background-color: var(--primary);
+}
