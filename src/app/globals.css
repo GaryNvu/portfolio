@@ -1,8 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #150120;
   --dark-purple: #220233;
+  --medium-purple: #360a55;
   --primary: #892CDC;
   --primary-light: #BC6FF1;
   --text: #FFFFFF;
@@ -12,16 +15,6 @@
   html {
     scroll-behavior: smooth;
   }
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-dark-purple: var(--dark-purple);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-light: var(--primary-light);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 h1 {
@@ -41,7 +34,13 @@ h1 {
 body {
   background: var(--background);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-cascadia-mono);
+  line-height: 1.25rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.25rem;
 }
 
 .nav-link {
@@ -77,4 +76,47 @@ body {
 
 .button-primary-light:hover {
   background-color: var(--primary);
+}
+
+.section-title {
+  position: relative;
+  color: var(--text);
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 8px;
+  background-color: var(--primary-light);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
 }

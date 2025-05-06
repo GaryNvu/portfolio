@@ -1,0 +1,71 @@
+{
+    "home": {
+      "greeting": "Hi, I'm",
+      "role": "Fullstack Developer"
+    },
+    "nav": {
+      "home": "Home",
+      "skills": "Skills",
+      "projects": "Projects",
+      "about": "About me",
+      "contact": "Contact"
+    },
+    "skills": {
+      "title": "Skills",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    },
+    "projects": {
+        "title": "Projects",
+        "github-link": "See on GitHub"
+    },
+    "CoreFit" : {
+        "title": "Corefit",
+        "description": "A comprehensive gym management platform with client and admin interfaces. Features include workout tracking, nutritional guidance, membership management, and analytics dashboard."
+    },
+    "Cardory": {
+        "title": "Cardory",
+        "description": "Trading card game e-commerce platform (Pokémon, Yu-Gi-Oh, Magic) with customer shopping experience and admin dashboard for inventory and sales management."
+    },
+    "Batibill" : {
+        "title": "Batibill",
+        "description": "Construction company management system for handling inventory, client relationships, and invoice generation with an intuitive dashboard."
+    },
+    "about": {
+        "title": "About me",
+        "journey": {
+            "title": "My Journey",
+            "canon": {
+            "title": "Apprenticeship at Canon France",
+            "description": "Applying skills in a professional context, developing business solutions"
+            },
+            "master": {
+            "title": "Master's Degree in Software Engineering",
+            "description": "Advanced web development and software architecture specialization"
+            },
+            "bachelor": {
+            "title": "Bachelor's Degree in Computer Science",
+            "description": "Fundamentals of software development and computer science"
+            }
+        },
+        "vision": {
+            "title": "My Vision",
+            "intro": "As a fullstack developer, I strive to create comprehensive and high-performing web applications. My passion lies in building projects from start to finish, with particular attention to :",
+            "qualities": {
+            "code": "Code quality and maintainability",
+            "ux": "User experience and interface design",
+            "performance": "Performance and optimization",
+            "communication": "Clear stakeholder communication",
+            "documentation": "Detailed project documentation"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+    }
+}

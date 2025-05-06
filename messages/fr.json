@@ -1,0 +1,71 @@
+{
+    "home": {
+      "greeting": "Bonjour, je suis",
+      "role": "Développeur Full Stack"
+    },
+    "nav": {
+      "home": "Accueil",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "skills": {
+      "title": "Compétences",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils"
+    },
+    "projects": {
+        "title": "Projets",
+        "github-link": "Voir sur GitHub"
+    },
+    "CoreFit" : {
+        "title": "Corefit",
+        "description": "Une plateforme complète de gestion de salle de sport avec interfaces client et administrateur. Inclut le suivi des entraînements, des conseils nutritionnels, la gestion des abonnements et un tableau de bord analytique."
+    },
+    "Cardory": {
+        "title": "Cardory",
+        "description": "Plateforme e-commerce de cartes à jouer (Pokémon, Yu-Gi-Oh, Magic) avec expérience d'achat client et tableau de bord administrateur pour la gestion des stocks et des ventes."
+    },
+    "Batibill" : {
+        "title": "Batibill",
+        "description": "Système de gestion pour entreprises du bâtiment permettant de gérer les stocks, les relations clients et la génération de factures avec un tableau de bord intuitif."
+    },
+    "about": {
+        "title": "À propos de moi",
+        "journey": {
+            "title": "Mon Parcours",
+            "canon": {
+                "title": "Alternance chez Canon France",
+                "description": "Application des compétences en contexte professionnel, développement de solutions métier"
+            },
+            "master": {
+                "title": "Master en Ingénierie Logicielle",
+                "description": "Spécialisation en développement web avancé et architecture logicielle"
+            },
+            "bachelor": {
+                "title": "Licence en Informatique",
+                "description": "Acquisition des fondamentaux du développement et des sciences informatiques"
+            }
+        },
+        "vision": {
+            "title": "Ma Vision",
+            "intro": "En tant que développeur full stack, je m'efforce de créer des applications web complètes et performantes. Ma passion réside dans la réalisation de projets de A à Z, avec une attention particulière pour :",
+            "qualities": {
+                "code": "Qualité et maintenabilité",
+                "ux": "Expérience utilisateur et design d'interface",
+                "performance": "Performance et optimisation",
+                "communication": "Communication claire et efficace",
+                "documentation": "Documentation détaillée"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer"
+    }
+}

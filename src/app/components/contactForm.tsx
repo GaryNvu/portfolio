@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslations } from 'next-intl';
 
 export default function ContactForm() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,15 +17,15 @@ export default function ContactForm() {
     e.preventDefault();
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_pzp3z9p',
+        'template_91gl9ng',
         {
           to_email: 'garyneveu14@gmail.com',
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        'YOUR_PUBLIC_KEY'
+        'i7h64O7NDJfHRRhxC'
       );
       setStatus('Message envoyé avec succès !');
       setFormData({ name: '', email: '', message: '' });
@@ -36,7 +38,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto space-y-6">
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-2">
-          Nom
+          {t('contact.name')}
         </label>
         <input
           type="text"
@@ -50,7 +52,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium mb-2">
-          Email
+          {t('contact.email')}
         </label>
         <input
           type="email"
@@ -64,7 +66,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium mb-2">
-          Message
+          {t('contact.message')}
         </label>
         <textarea
           id="message"
@@ -80,7 +82,7 @@ export default function ContactForm() {
         type="submit"
         className="w-full button-primary-light py-3 rounded-lg hover:bg-primary transition-colors"
       >
-        Envoyer
+        {t('contact.send')}
       </button>
 
       {status && (

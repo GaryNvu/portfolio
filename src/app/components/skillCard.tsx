@@ -1,10 +1,5 @@
-import { JSX } from 'react';
-import * as Fa from 'react-icons/fa'
-import * as Si from 'react-icons/si'
-import * as Tb from 'react-icons/tb'
-import * as Di from "react-icons/di";
-import { PiMicrosoftPowerpointLogoFill } from "react-icons/pi";
-import { DiBootstrap } from "react-icons/di";
+import React, { JSX } from 'react';
+import Image from 'next/image';
 
 interface Skill {
     name: string;
@@ -16,25 +11,17 @@ interface SkillCardProps {
     skills: Skill[];
 }
 
-const icon_classes = "w-8 h-8 text-primary-light";
-
 const getIcon = (iconName: string) => {
-    const icons: { [key: string]: JSX.Element } = {
-        "react": <Si.SiReact className={icon_classes} />,
-        "vue": <Si.SiVuedotjs className={icon_classes} />,
-        "nextjs": <Si.SiNextdotjs className={icon_classes} />,
-        "typescript": <Si.SiTypescript className={icon_classes} />,
-        "django": <Si.SiDjango className={icon_classes} />,
-        "tailwind": <Si.SiTailwindcss className={icon_classes} />,
-        "bootstrap": <Di.DiBootstrap className={icon_classes} />,
-        "nodejs": <Fa.FaNodeJs className={icon_classes} />,
-        "mongodb": <Si.SiMongodb className={icon_classes} />,
-        "postgresql": <Si.SiPostgresql className={icon_classes} />,
-        "docker": <Si.SiDocker className={icon_classes} />,
-        "figma": <Si.SiFigma className={icon_classes} />,
-        "powerbi": <PiMicrosoftPowerpointLogoFill className={icon_classes} />,
-    }
-    return icons[iconName] || <Tb.TbCode className={icon_classes} />
+    return (
+        <div className="relative w-8 h-8">
+            <Image
+                src={`/icons/${iconName}.svg`}
+                alt={`${iconName} icon`}
+                fill
+                className="object-contain text-primary-light"
+            />
+        </div>
+    );
 }
 
 export default function SkillCard({ title, skills }: SkillCardProps) {
