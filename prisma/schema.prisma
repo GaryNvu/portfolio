@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("PRISMA_DATABASE_URL")
+}
+
+model SavingsGoal {
+  id          String   @id @default(cuid())
+  title       String   @db.VarChar(70)
+  targetCents Int
+  savedCents  Int      @default(0)
+  image       String?  @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([updatedAt])
+}

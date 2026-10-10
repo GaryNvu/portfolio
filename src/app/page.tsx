@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import GoalsDashboard from './components/goalsDashboard';
 
-export default function RootPage() {
-  return null;
+export default function Home() {
+  return <GoalsDashboard />;
 }
